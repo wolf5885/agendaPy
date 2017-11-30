@@ -9,7 +9,7 @@ agenda = []
 while True:
 	menuPpal()
 
-	operation = input("Elija una opción: ")
+	operation = input("Elija una Opción: ")
 
 	if operation in ["s", "S"]:
 		break
