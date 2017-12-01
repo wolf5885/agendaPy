@@ -1,6 +1,6 @@
 from os import system
 
-def menuPpal():
+def mainMenu():
 	system("clear")	
 
 	print("Menú Principal")
@@ -14,7 +14,7 @@ def menuPpal():
 	print()
 	print()
 
-def menuAlta():
+def heightMenu():
 	system("clear")	
 	
 	print("Alta de Personas")

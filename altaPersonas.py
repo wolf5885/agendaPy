@@ -1,30 +1,30 @@
 from os import system
-from menu import menuAlta
+from menu import hightMenu
 
-def altaPersonas(agenda):
+def hightPerson(dairy):
 	while True:
-		menuAlta()
+		hightMenu()
 
-		operation = input("Seleccione una opción: ")
+		option = input("Seleccione una opción: ")
 
-		if operation in ["v", "V"]:
+		if option in ["v", "V"]:
 			break
-		elif operation in ["a", "A"]:
-			agenda = alta(agenda)
+		elif option in ["a", "A"]:
+			dairy = hight(dairy)
 	
-	return agenda
+	return dairy
 
 
-def alta(agenda):
-	persona = {}
+def hight(dairy):
+	person = {}
 
-	persona["apellido"] = input("Ingrese apellido: ")
-	persona["nombre"] = input("Ingrese nombre: ")
-	persona["dni"] = int(input("Ingrese DNI: "))
-	persona["direccion"] = input("Ingrese dirección: ")
-	persona["telefono"] = input("Ingrese teléfono: ")
-	persona["correo"] = input("Ingrese correo electrónico: ")
+	person["lastName"] = input("Ingrese apellido: ")
+	person["Name"] = input("Ingrese nombre: ")
+	person["dni"] = int(input("Ingrese DNI: "))
+	person["address"] = input("Ingrese dirección: ")
+	person["phone"] = input("Ingrese teléfono: ")
+	person["mail"] = input("Ingrese correo electrónico: ")
 
-	agenda.append(persona)
+	dairy.append(person)
 
-	return agenda
+	return dairy

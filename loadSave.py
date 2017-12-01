@@ -1,5 +1,5 @@
 from json import dump
 
-def guardar(agenda):
-	with open("agenda.db", "w") as fout:
-		dump(agenda, fout)
+def save(diary:
+	with open("diary.db", "w") as fout:
+		dump(diary, fout)

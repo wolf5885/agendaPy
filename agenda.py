@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 
-from menu import menuPpal
-from  loadSave import guardar
-from altaPersonas import altaPersonas
+from menu import mainMenu
+from  loadSave import save
+from altaPersonas import hightPerson
 	
-agenda = []
+dairy = []
 
 while True:
-	menuPpal()
+	mainMenu()
 
-	operation = input("Elija una opción: ")
+	option = input("Elija una opción: ")
 
-	if operation in ["s", "S"]:
+	if option in ["s", "S"]:
 		break
-	elif operation in ["a", "A"]:
-		agenda = altaPersonas(agenda)
+	elif option in ["a", "A"]:
+		dairy = hightPerson(dairy)
 
-guardar(agenda)
+save(dairy)
