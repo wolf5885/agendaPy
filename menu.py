@@ -14,7 +14,7 @@ def mainMenu():
 	print()
 	print()
 
-def heightMenu():
+def hightMenu():
 	system("clear")	
 	
 	print("Alta de Personas")
