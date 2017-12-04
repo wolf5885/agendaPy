@@ -24,3 +24,42 @@ def hightMenu():
 	print("	v) Volver al menú anterior")
 	print()
 	print()
+	
+def searchMenu():
+    system("clear")
+    
+    print("Busqueda de Persona")
+    print("======== == =======")
+    print()
+    print(" a) Busqueda por apellido")
+    print(" d) Busqueda por Dni")
+    print(" v) Volver al menu principal")
+    print()
+    print()
+
+
+def removeMenu():
+    system("clear")
+    
+    print("Eliminación de Persona")
+    print("=========== == =======")
+    print()
+    print(" d) Buscar por Dni y eliminar")
+    print(" v) Volver al menu principal")
+    print()
+    print()
+    
+def changeMenu():
+    system("clear")
+    
+    print("Modificacion de Persona")
+    print("============ == =======")
+    print()
+    print(" d) Busqueda por Dni")
+    print(" v) Volver al menu principal")
+    print()
+    print()
+
+
+
+    

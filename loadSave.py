@@ -1,5 +1,6 @@
 from json import dump
 
-def save(diary):
-	with open("diary.db", "w") as fout:
-		dump(diary, fout)
+def save(dairy):
+    with open("dairy.db", "w") as fout:
+        dump(dairy, fout)
+		
