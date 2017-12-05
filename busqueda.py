@@ -1,7 +1,4 @@
 from menu import searchMenu
-
-
-
 	
 def search(dairy):
     
@@ -39,7 +36,7 @@ def searchDni(dairy):
     dni = int(input("Escribir Dni: "))
     
     for busqueda in dairy:
-            
+        
         if dni == busqueda["dni"]:
             print(busqueda)
             input("")

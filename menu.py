@@ -60,6 +60,19 @@ def changeMenu():
     print()
     print()
 
+def modificationMenu():
+    system("clear")
+    
+    print("Opciones de Modificacion de Persona")
+    print("======== == ============ == =======")
+    print()
+    print(" d) Cambiar Direccion")
+    print(" e) Cambiar correo electronico ")
+    print(" t) Cambiar Telefono ")
+    print(" v) Volver a menu de busqueda ")
+    print()
 
+    
+    
 
     

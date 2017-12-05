@@ -5,7 +5,7 @@ from  loadSave import save
 from altaPersonas import hightPerson
 from busqueda import search 
 from eliminarPersona import remove
-
+from modificacion import modification
 dairy = []
 
 
@@ -21,7 +21,9 @@ while True:
     elif option in ["b", "B"]:
         search(dairy)
     elif option in ["e", "E"]:
-        remove(dairy)
+        dairy = remove(dairy)
+    elif option in ["m", "M"]:
+        dairy = modification(dairy)
         
                 
 save(dairy)

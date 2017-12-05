@@ -2,22 +2,38 @@ from menu import removeMenu
 
 def remove(dairy):
 
-    while True:
+    while True:        
+        removeMenu()
+        option = input("Elija opcion: ")
 
-        check = 1
-        dni = int(input("Escribir Dni: "))
+        if option in ["d", "D"]:       
+            dairy = removeOption(dairy)
+        elif option in ["v", "V"]:
+            break
+        
+    return dairy
+        
+        
+        
+        
+def removeOption(dairy):
     
-        for busqueda in dairy:
-            
-            if dni == busqueda["dni"]:
-                print(busqueda)
+    check = 1
+    dni = int(input("Escribir Dni: "))
+    
+    for busqueda in dairy:
+        
+        if dni == busqueda["dni"]:
+            print(busqueda)
+            check = 0
+            if "si" == input("Usted esta seguro de eliminar al sujeto (si) o (no): "):
                 dairy.remove(busqueda)
                 print("Eliminado con exito")
                 input("")
-                check = 0
-                return dairy
+            return dairy
                 
 
-        if check == 1 :
-            print("No se encontro el dni ingresado")
-            input("")
+            if check == 1 :
+                print("No se encontro el dni ingresado")
+                input("")
+       
