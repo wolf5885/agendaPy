@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 from menu import mainMenu
-from  loadSave import save
+from  loadSave import *
 from altaPersonas import hightPerson
 from busqueda import search 
 from eliminarPersona import remove
 from modificacion import modification
-dairy = []
+
+dairy = load()
 
 
 while True:

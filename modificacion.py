@@ -11,19 +11,20 @@ def modification(dairy):
         elif option in ["v", "V"]:
             break
   
+    return dairy
 
 def searchModification(dairy):
     check = 1
     dni = int(input("Escribir Dni: "))
     
-    for busqueda in dairy:
+    for searcher in dairy:
         
-        if dni == busqueda["dni"]:
-            print(busqueda)
+        if dni == searcher["dni"]:
+            print(searcher)
             check = 0
             if "si" == input("Usted quiere modificar a este sujeto (si) o (no): "):
-                busqueda = optionModification(busqueda)
-                dairy.append(busqueda)
+                searcher = optionModification(searcher)
+                dairy.append(searcher)
                 print("")
                 return dairy
                 
@@ -32,36 +33,36 @@ def searchModification(dairy):
                 print("No se encontro el dni ingresado")
                 input("")
                 
-def optionModification(busqueda):
+def optionModification(searcher):
     
     while True:
         modificationMenu()
         option = input(" Escribe la letra de la opcion: ")
         if option in ["e", "E"]:
-            print(busqueda)
-            busqueda["mail"] = input("Ingrese nuevo mail: ")
+            print(searcher)
+            searcher["mail"] = input("Ingrese nuevo mail: ")
             print()
             print("Modificado con exito")
-            print(busqueda)
+            print(searcher)
             input("")
         elif option in ["d", "D"]:
-            print(busqueda)
-            busqueda["address"] = input("Ingrese nueva direccion: ")
+            print(searcher)
+            searcher["address"] = input("Ingrese nueva direccion: ")
             print()
             print("Modificado con exito")
-            print(busqueda)
+            print(searcher)
             input("")
         elif option in ["t", "T"]: 
-            print(busqueda)
-            busqueda["phone"] = input("Ingrese nuevo telefono: ")
+            print(searcher)
+            searcher["phone"] = input("Ingrese nuevo telefono: ")
             print()
             print("Modificado con exito")
-            print(busqueda)
+            print(searcher)
             input("")
         elif option in ["V", "v"]: 
             break
 
-    return busqueda
+    return searcher
         
         
         

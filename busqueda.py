@@ -19,10 +19,10 @@ def searchLastname(dairy):
     lastName = input("Escribir apellido: ")
     check = 1
 
-    for busqueda in dairy:
+    for searcher in dairy:
 
-        if lastName == busqueda["lastName"]:
-            print(busqueda)
+        if lastName == searcher["lastName"]:
+            print(searcher)
             input("")
             check = 0
     if check == 1 :
@@ -35,10 +35,10 @@ def searchDni(dairy):
     check = 1
     dni = int(input("Escribir Dni: "))
     
-    for busqueda in dairy:
+    for searcher in dairy:
         
-        if dni == busqueda["dni"]:
-            print(busqueda)
+        if dni == searcher["dni"]:
+            print(searcher)
             input("")
             check = 0
                 

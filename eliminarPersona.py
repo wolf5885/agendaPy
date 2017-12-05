@@ -21,13 +21,13 @@ def removeOption(dairy):
     check = 1
     dni = int(input("Escribir Dni: "))
     
-    for busqueda in dairy:
+    for searcher in dairy:
         
-        if dni == busqueda["dni"]:
-            print(busqueda)
+        if dni == searcher["dni"]:
+            print(searcher)
             check = 0
             if "si" == input("Usted esta seguro de eliminar al sujeto (si) o (no): "):
-                dairy.remove(busqueda)
+                dairy.remove(searcher)
                 print("Eliminado con exito")
                 input("")
             return dairy
