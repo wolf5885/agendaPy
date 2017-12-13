@@ -24,7 +24,15 @@ def removeOption(dairy):
     for searcher in dairy:
         
         if dni == searcher["dni"]:
-            print(searcher)
+            print()
+            print("Nombre: " + searcher["name"] )
+            print("Apellido: " + searcher["lastName"])
+            print("Dni: " + str(searcher["dni"]))
+            print("Direccion: " + searcher["address"] )
+            print("telefono: " + searcher["phone"] )
+            print("Correo electronico: " + searcher["mail"])
+            print()
+            
             check = 0
             if "si" == input("Usted esta seguro de eliminar al sujeto (si) o (no): "):
                 dairy.remove(searcher)

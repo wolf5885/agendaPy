@@ -22,7 +22,16 @@ def searchLastname(dairy):
     for searcher in dairy:
 
         if lastName == searcher["lastName"]:
-            print(searcher)
+
+            print()
+            print("Nombre: " + searcher["name"] )
+            print("Apellido: " + searcher["lastName"])
+            print("Dni: " + str(searcher["dni"]))
+            print("Direccion: " + searcher["address"] )
+            print("telefono: " + searcher["phone"] )
+            print("Correo electronico: " + searcher["mail"])
+            print()
+            
             input("")
             check = 0
     if check == 1 :
@@ -38,7 +47,16 @@ def searchDni(dairy):
     for searcher in dairy:
         
         if dni == searcher["dni"]:
-            print(searcher)
+            
+            print()
+            print("Nombre: " + searcher["name"] )
+            print("Apellido: " + searcher["lastName"])
+            print("Dni: " + str(searcher["dni"]))
+            print("Direccion: " + searcher["address"] )
+            print("telefono: " + searcher["phone"] )
+            print("Correo electronico: " + searcher["mail"])
+            print()
+            
             input("")
             check = 0
                 

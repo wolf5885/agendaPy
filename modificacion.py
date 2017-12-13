@@ -20,7 +20,14 @@ def searchModification(dairy):
     for searcher in dairy:
         
         if dni == searcher["dni"]:
-            print(searcher)
+            print()
+            print("Nombre: " + searcher["name"] )
+            print("Apellido: " + searcher["lastName"])
+            print("Dni: " + str(searcher["dni"]))
+            print("Direccion: " + searcher["address"] )
+            print("telefono: " + searcher["phone"] )
+            print("Correo electronico: " + searcher["mail"])
+            print()
             check = 0
             if "si" == input("Usted quiere modificar a este sujeto (si) o (no): "):
                 searcher = optionModification(searcher)
@@ -39,25 +46,25 @@ def optionModification(searcher):
         modificationMenu()
         option = input(" Escribe la letra de la opcion: ")
         if option in ["e", "E"]:
-            print(searcher)
+            print("Correo electronico acutal: " + searcher["mail"])
             searcher["mail"] = input("Ingrese nuevo mail: ")
             print()
             print("Modificado con exito")
-            print(searcher)
+            print("Correo nuevo: " + searcher["mail"])
             input("")
         elif option in ["d", "D"]:
-            print(searcher)
+            print("Direccion actual: " + searcher["address"])
             searcher["address"] = input("Ingrese nueva direccion: ")
             print()
             print("Modificado con exito")
-            print(searcher)
+            print("Direccion nueva: " + searcher["address"])
             input("")
         elif option in ["t", "T"]: 
-            print(searcher)
+            print("Telefono actual: " + searcher["phone"])
             searcher["phone"] = input("Ingrese nuevo telefono: ")
             print()
             print("Modificado con exito")
-            print(searcher)
+            print("Telefono nuevo: " + searcher["phone"])
             input("")
         elif option in ["V", "v"]: 
             break

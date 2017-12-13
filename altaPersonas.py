@@ -19,7 +19,7 @@ def hight(dairy):
 	person = {}
 
 	person["lastName"] = input("Ingrese apellido: ")
-	person["Name"] = input("Ingrese nombre: ")
+	person["name"] = input("Ingrese nombre: ")
 	person["dni"] = int(input("Ingrese DNI: "))
 	person["address"] = input("Ingrese dirección: ")
 	person["phone"] = input("Ingrese teléfono: ")
